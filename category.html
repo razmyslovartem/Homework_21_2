@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .brand-icon {
+          width: 28px;
+          height: 28px;
+          background: #fff;
+          color: #0d6efd;
+          border-radius: 6px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+          font-size: 18px;
+        }
+        .sidebar-line {
+        border-bottom: 1px solid #6c757d;
+        margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row min-vh-100">
+        <aside class="col-12 col-md-3 col-lg-2 bg-dark text-white p-3 d-flex flex-column">
+          <h5 class="text-white mb-3 d-flex align-items-center">
+            <span class="brand-icon me-2">B</span>
+            <span>Меню</span>
+          </h5>
+
+          <div class="sidebar-line mx-n3"></div>
+
+          <ul class="nav flex-column mt-3">
+            <li class="nav-item"><a class="nav-link text-white active" href="/">Главная</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/category.html">Категории</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/catalog.html">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/contacts.html">Контакты</a></li>
+          </ul>
+
+          <div class="mt-auto pt-3 border-top border-secondary">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Пользователь
+              </button>
+              <ul class="dropdown-menu w-100">
+                <li><a class="dropdown-item" href="#">Профиль</a></li>
+                <li><a class="dropdown-item" href="#">Выход</a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+
+        <main class="col p-4 bg-light">
+            <h1 class="text-center mt-5 mb-4">Категории</h1>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- Карта 1 -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <!-- Заголовок карточки -->
+                        <div class="card-header text-center fs-4 fw-bold text-muted">
+                            Айфон_1
+                        </div>
+
+                        <!-- Основное содержимое карточки -->
+                        <div class="card-body d-flex flex-column">
+                            <p class="text-center fs-2 fw-bold mb-2">$12500</p>
+                            <p class="card-text small mb-3">Краткое, ну очень краткое описание товара.</p>
+                            <a href="#" class="btn btn-outline-primary w-100 mt-auto">Купить</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карта 2 -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <!-- Заголовок карточки -->
+                        <div class="card-header text-center fs-4 fw-bold text-muted">
+                            Айфон_2
+                        </div>
+
+                        <!-- Основное содержимое карточки -->
+                        <div class="card-body d-flex flex-column">
+                            <p class="text-center fs-2 fw-bold mb-2">$14560</p>
+                            <p class="card-text small mb-3">Краткое, ну очень краткое описание товара.</p>
+                            <a href="#" class="btn btn-outline-primary w-100 mt-auto">Купить</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карта 3 -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <!-- Заголовок карточки -->
+                        <div class="card-header text-center fs-4 fw-bold text-muted">
+                            Айфон_3
+                        </div>
+
+                        <!-- Основное содержимое карточки -->
+                        <div class="card-body d-flex flex-column">
+                            <p class="text-center fs-2 fw-bold mb-2">$145680</p>
+                            <p class="card-text small mb-3">Краткое, ну очень краткое описание товара.</p>
+                            <a href="#" class="btn btn-outline-primary w-100 mt-auto">Купить</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карта 4 -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <!-- Заголовок карточки -->
+                        <div class="card-header text-center fs-4 fw-bold text-muted">
+                            Айфон_4
+                        </div>
+
+                        <!-- Основное содержимое карточки -->
+                        <div class="card-body d-flex flex-column">
+                            <p class="text-center fs-2 fw-bold mb-2">$123400</p>
+                            <p class="card-text small mb-3">Краткое, ну очень краткое описание товара.</p>
+                            <a href="#" class="btn btn-outline-primary w-100 mt-auto">Купить</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карта 5 -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <!-- Заголовок карточки -->
+                        <div class="card-header text-center fs-4 fw-bold text-muted">
+                            Айфон_5
+                        </div>
+
+                        <!-- Основное содержимое карточки -->
+                        <div class="card-body d-flex flex-column">
+                            <p class="text-center fs-2 fw-bold mb-2">$123450</p>
+                            <p class="card-text small mb-3">Краткое, ну очень краткое описание товара.</p>
+                            <a href="#" class="btn btn-outline-primary w-100 mt-auto">Купить</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карта 6 -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <!-- Заголовок карточки -->
+                        <div class="card-header text-center fs-4 fw-bold text-muted">
+                            Айфон_6
+                        </div>
+
+                        <!-- Основное содержимое карточки -->
+                        <div class="card-body d-flex flex-column">
+                            <p class="text-center fs-2 fw-bold mb-2">$54200</p>
+                            <p class="card-text small mb-3">Краткое, ну очень краткое описание товара.</p>
+                            <a href="#" class="btn btn-outline-primary w-100 mt-auto">Купить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+  </div>
+</body>
+</html>
