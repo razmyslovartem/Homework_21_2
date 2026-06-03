@@ -1,13 +1,14 @@
 #server.py
 
 from http.server import BaseHTTPRequestHandler, HTTPServer
+from pathlib import Path
 from urllib.parse import urlparse
 import os
 
 
 hostName = "localhost"
 serverPort = 8080
-ROOT_DIR = "."   # Папка с HTML‑файлами (где лежит server.py).
+ROOT_DIR = Path.cwd()   # Папка с HTML‑файлами (где лежит server.py).
 
 # Ключ - это путь, а значение это файл шаблон.
 templates_map = {
@@ -37,7 +38,7 @@ class MyServer(BaseHTTPRequestHandler):
             return
 
         # Полный путь к файлу.
-        filepath = os.path.join(ROOT_DIR, filename)
+        filepath = ROOT_DIR / filename
 
         if not os.path.exists(filepath) or not os.path.isfile(filepath):
             self.send_response(404)
